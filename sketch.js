@@ -25,7 +25,7 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  background("white");
 
   if (keyDown("space") && trex.y >= 100) {
     trex.velocityY = -12;
@@ -51,7 +51,7 @@ function spawnClouds() {
     cloud = createSprite(600, 100, 40, 10);
     cloud.addImage(cloudImage);
     cloud.y = Math.round(random(10, 60));
-    cloud.scale = 0.4;
+    cloud.scale = 0.5;
     cloud.velocityX = -3;
 
     //adjust the depth
